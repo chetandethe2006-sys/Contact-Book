@@ -13,7 +13,7 @@
     <div class="max-w-2xl mx-auto">
 
         <h1 class="text-3xl font-bold text-indigo-900 mb-1">Contact Book</h1>
-        <p id="status" class="text-sm text-slate-500 mb-6">Sample data - not connected to a server yet</p>
+        <p id="status" class="text-sm text-slate-500 mb-6">Connecting to server...</p>
 
         <form id="contact-form" class="bg-white rounded-lg shadow p-4 mb-6 space-y-3">
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -24,9 +24,14 @@
                 <input id="email-input" name="email" type="text" placeholder="Email"
                     class="border border-slate-300 rounded-lg px-3 py-2">
             </div>
-            <button type="submit" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">
-                Add Contact
-            </button>
+            <div class="flex items-center gap-2">
+                <button id="submit-btn" type="submit" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">
+                    Add Contact
+                </button>
+                <button id="cancel-btn" type="button" class="hidden text-slate-600 hover:text-slate-800 px-4 py-2 rounded-lg border border-slate-300 hover:bg-slate-50 text-sm">
+                    Cancel
+                </button>
+            </div>
         </form>
 
         <ul id="contact-list" class="space-y-2"></ul>
