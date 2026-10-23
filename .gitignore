@@ -1,4 +1,14 @@
-backend/node_modules
-Backend/.env
-.env
+# Node.js dependencies
 node_modules/
+backend/node_modules/
+Backend/node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+Backend/.env
+
+# Build output
+dist/
+build/
